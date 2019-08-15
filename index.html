@@ -1,39 +1,49 @@
+<!DOCTYPE HTML>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.button {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
+	<head>
+		<title>MagicBlue Exploit</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-.button:hover {background-color: #3e8e41}
+				<!-- Header -->
+					<header id="header">
 
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-</style>
-</head>
-<script src="exploit.js" type="text/javascript"></script>
-<body>
-<button class="button" onclick="device_connect()">Connect</button>
-<button class="button" onclick="light_on()">ON</button>
-<button class="button" onclick="light_off()">OFF</button>
-<button class="button" onclick="color_red()">RED</button>
-<button class="button" onclick="color_green()">GREEN</button>
-<button class="button" onclick="color_blue()">BLUE</button>
-<button class="button" onclick="color_white()">WHITE</button>
-<button class="button" onclick="color_rainbow()">RAINBOW</button>
-<button class="button" onclick="device_disconnect()">Disconnect</button>
-</body>
+						<div class="content">
+							<div class="inner">
+								<h1>MagicBlue - Exploit</h1>
+								<p>MagicBlue smart bulb works on BLuetooth Low Energy. When the light is in discovery mode, it can be discovered and exploited remotely using web pages.
+									 Light can be switched ON,OFF and Change colors</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><button onclick="device_connect()">CONNECT</button></li>
+								<li><button onclick="light_on()">ON</button></li>
+								<li><button onclick="light_off()">OFF</button></li>
+								<li><button onclick="color_red()">RED</button></li>
+								<li><button onclick="color_green()">GREEN</button></li>
+								<li><button onclick="color_blue()">BLUE</button></li>
+								<li><button onclick="color_white()">WHITE</button></li>
+								<li><button onclick="color_rainbow()">RAINBOW</button></li>
+								<li><button onclick="device_disconnect()">DISCONNECT</button></li>
+							</ul>
+						</nav>
+					</header>
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; just2exploit <a href="https://github.com/just2exploit">github</a>.</p>
+					</footer>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/exploit.js"></script>
+
+	</body>
 </html>
